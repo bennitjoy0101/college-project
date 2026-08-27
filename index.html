@@ -1,16 +1,327 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>College Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - Carbon Footprint Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Welcome to Our College Project</h1>
-    <p>This is our project website.</p>
+    <!-- ================= NAVBAR ================= -->
 
-    <button onclick="showMessage()">Click Me</button>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">EcoTrack</a>
 
-    <script src="script.js"></script>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#ghg">Greenhouse Gases</a></li>
+                <li><a href="#carbon-footprint">Carbon Footprint</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li>
+                    <a href="quiz/quiz.html" class="nav-button">
+                        Get Started
+                    </a>
+                </li>
+            </ul>
+
+      </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="tag">🌱 Understand Your Impact</span>
+
+                <h1>
+                    Measure your
+                    <span>carbon footprint.</span>
+                </h1>
+
+                <p>
+                    Discover how your everyday choices affect the environment.
+                    Calculate your carbon footprint and find simple ways to
+                    reduce your impact on the planet.
+                </p>
+
+                <!-- Change this link when calculator page is created -->
+                <a href="quiz/quiz.html" class="get-started">
+                    Get Started →
+                </a>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="leaf-icon">🌿</div>
+
+                <h2>Your impact matters.</h2>
+
+                <p>
+                    Small changes in transportation, energy, food and
+                    lifestyle can make a meaningful difference.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GREENHOUSE GASES ================= -->
+
+        <section class="info-section" id="ghg">
+
+            <div class="section-container">
+
+                <h2>Greenhouse Gases &amp; Carbon Footprint</h2>
+                <p class="section-intro">
+                    Understanding the gases that drive climate change is the
+                    first step toward reducing your own impact.
+                </p>
+
+                <div class="article-block">
+
+                    <h3>What are Greenhouse Gases?</h3>
+                    <p>
+                        Greenhouse gases (GHG) are those gaseous constituents
+                        of the atmosphere, both natural and anthropogenic,
+                        that absorb and emit radiation at specific
+                        wavelengths within the spectrum of thermal infrared
+                        radiation emitted by the Earth's surface, the
+                        atmosphere itself, and by clouds. This property
+                        causes the greenhouse effect. Water vapour (H2O),
+                        carbon dioxide (CO2), nitrous oxide (N2O), methane
+                        (CH4) and ozone (O3) are the primary greenhouse gases
+                        in the Earth's atmosphere. Moreover, there are a
+                        number of entirely human-made greenhouse gases in
+                        the atmosphere, such as the halocarbons and other
+                        chlorine- and bromine-containing substances, dealt
+                        with under the Montreal Protocol. Beside CO2, N2O
+                        and CH4, the Kyoto Protocol deals with the greenhouse
+                        gases sulphur hexafluoride (SF6), hydrofluorocarbons
+                        (HFCs) and perfluorocarbons (PFCs).
+                    </p>
+
+                    <h3>Importance of Greenhouse Gases</h3>
+                    <p>
+                        Greenhouse gases trap some of the Earth's outgoing
+                        energy, thus retaining heat in the atmosphere. This
+                        heat trapping causes changes in the radiative
+                        balance of the Earth — the balance between energy
+                        received from the sun and emitted from the Earth —
+                        that alters climate and weather patterns at a
+                        regional and global scale. Human activities are the
+                        primary cause of global warming since the start of
+                        the 20th century. However, natural factors such as
+                        variation in the sun's output, volcanic activity,
+                        the carbon cycle and others also affect the Earth's
+                        radiative balance. The increase in greenhouse gas
+                        concentrations causes warming and is affecting
+                        various aspects of climate, including surface air
+                        and ocean temperatures, precipitation, and sea
+                        levels. Human health, agriculture, water resources,
+                        forests, wildlife and coastal areas are all
+                        vulnerable to climate change.
+                    </p>
+
+                </div>
+
+                <div class="chart-card">
+                    <h3>Annual CO2 Emissions by Country</h3>
+                    <iframe
+                        class="chart-frame"
+                        src="https://ourworldindata.org/grapher/annual-co2-emissions-per-country?country=IND~LBN~PHL~JOR&tab=line"
+                        loading="lazy"
+                        allow="web-share; clipboard-write">
+                    </iframe>
+                    <p class="chart-caption">Source: Our World in Data</p>
+                </div>
+
+                <div class="article-block">
+
+                    <h3>The Impact of Climate Change</h3>
+                    <p>
+                        The changing climate affects society and ecosystems
+                        in a variety of ways: more severe heat waves, floods
+                        and droughts are occurring, as expected in a warmer
+                        climate. These extreme events harm people, damage
+                        property, strain infrastructure, reduce crop yield
+                        and more. Sea level rise has already begun to erode
+                        and inundate coastal ecosystems and eliminate
+                        wetlands. Climate change can alter where species
+                        live and how they interact, which could
+                        fundamentally transform current ecosystems.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CARBON FOOTPRINT ================= -->
+
+        <section class="info-section" id="carbon-footprint">
+
+            <div class="section-container">
+
+                <h2>What is a Carbon Footprint?</h2>
+
+                <div class="article-block">
+                    <p>
+                        Carbon footprint refers to the amount of carbon
+                        dioxide (CO2) emissions associated with all the
+                        activities of a person or other entity, such as a
+                        building, corporation or country. It includes
+                        direct emissions, such as those that result from
+                        fossil-fuel combustion in manufacturing, heating
+                        and transportation, as well as emissions required
+                        to produce the electricity associated with goods
+                        and services consumed. Carbon footprint also often
+                        includes the emissions of other greenhouse gases,
+                        such as methane, nitrous oxide or
+                        chlorofluorocarbons.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INFO ================= -->
+
+        <section class="info-section" id="info">
+
+            <div class="section-container">
+
+                <h2>Why calculate your footprint?</h2>
+
+                <p class="section-intro">
+                    Knowing your carbon footprint is the first step toward
+                    understanding where your emissions come from and how
+                    you can reduce them.
+                </p>
+
+
+                <div class="cards">
+
+                    <div class="info-card">
+                        <div class="icon">📊</div>
+                        <h3>Understand</h3>
+                        <p>
+                            Get an estimate of the emissions associated with
+                            your everyday activities.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon">🌱</div>
+                        <h3>Improve</h3>
+                        <p>
+                            Identify areas where simple lifestyle changes
+                            could reduce your environmental impact.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon">♻️</div>
+                        <h3>Take Action</h3>
+                        <p>
+                            Use your results to make more sustainable
+                            decisions in your daily life.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="info-section" id="how-it-works">
+
+            <div class="section-container">
+
+                <h2>How does it work?</h2>
+
+                <p class="section-intro">
+                    Answer a few questions about your daily activities —
+                    such as household size, electricity consumption and the
+                    type of cooking gas you use. Your information is then
+                    used to estimate your carbon emissions and identify
+                    areas for improvement.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta">
+
+            <h2>Ready to measure your impact?</h2>
+
+            <p>
+                Start your carbon footprint assessment and discover where
+                you can make a difference.
+            </p>
+
+            <a href="quiz/quiz.html" class="get-started">
+                Calculate My Footprint →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h3>EcoTrack</h3>
+                <p>
+                    A simple tool to understand, measure and reduce your
+                    personal carbon footprint.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#ghg">Greenhouse Gases</a>
+                <a href="#carbon-footprint">Carbon Footprint</a>
+                <a href="#info">Info</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="calculator.html">Calculator</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 EcoTrack. Built for a greener future.
+        </div>
+
+    </footer>
+
 </body>
 </html>
